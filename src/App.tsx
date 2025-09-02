@@ -1,16 +1,17 @@
-import Header from './components/Header'
-import Footer from './components/footer'
+import Header from "./components/Header";
+import Footer from "./components/footer";
+import AdmissionForm from "./pages/AdmissionForm";
 
-import './App.css'
+import "./App.css";
 
 function App() {
   return (
     <>
-    <Header/>    
-    <Footer/>
-
+      <Header></Header>
+      <AdmissionForm></AdmissionForm>
+      <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
