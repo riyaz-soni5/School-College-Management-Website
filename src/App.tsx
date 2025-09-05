@@ -1,3 +1,4 @@
+
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { Routes,Route } from 'react-router-dom'
@@ -9,6 +10,9 @@ import AcademicPrograms from './pages/Academic-Programs.tsx'
 import News from './pages/News.tsx'
 import Admission from './pages/Admission.tsx'
 
+import AdmissionForm from "./pages/AdmissionForm";
+
+import "./App.css";
 
 function App() {
   return (
@@ -25,7 +29,7 @@ function App() {
     </main>
     <Footer/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
