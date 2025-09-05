@@ -3,6 +3,7 @@
 :root{
     --primary-color: #F5F6F7;
     --secondary-color: #154480;
+    font-size: 16px;
     
 }
 
@@ -13,3 +14,6 @@
 
 /* header style */
 
+.active{
+    color:red;
+}
