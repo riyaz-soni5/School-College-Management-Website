@@ -10,8 +10,6 @@ import AcademicPrograms from './pages/Academic-Programs.tsx'
 import News from './pages/News.tsx'
 import Admission from './pages/Admission.tsx'
 
-import AdmissionForm from "./pages/AdmissionForm";
-
 import "./App.css";
 
 function App() {

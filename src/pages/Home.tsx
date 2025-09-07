@@ -1,3 +1,6 @@
+import { Typewriter } from 'react-simple-typewriter'
+import { NavLink } from 'react-router-dom';
+
 import SectionContainer from "../components/SectionContainer";
 import SchoolImg from '../assets/imgs/school-Image.png';
 import CollageImg1 from '../assets/imgs/collage-1.png';
@@ -18,7 +21,27 @@ import ProgrammerSection from "../components/ProgrammesSection";
 function Home(){
     return (
         <main className="flex flex-col items-center justify-center">
-            <SectionContainer backgroundImg=  {SchoolImg} height="small"/>
+            <SectionContainer backgroundImg=  {SchoolImg} height="small">
+                <div className='w-full h-full flex items-end md:text-4xl text-2xl'>
+                    <h1>WE BUILD{' '}
+
+                        <span className='text-[#F5D32B]'>
+                            <Typewriter 
+                            words={["FUTURES,", "LEADERS,", "INNOVATORS,", "DREAMS,"]}
+                            loop={false}
+                            cursor
+                            cursorStyle='|'
+                            />
+
+                        </span>
+                        <span>
+                            <button className='block text-xl border p-3 rounded-sm hover:bg-[var(--secondary-color)]'><NavLink to="/admission">Apply Now</NavLink></button>
+                        </span>
+                    </h1>
+                    
+                </div>
+                
+            </SectionContainer>
             <SectionContainer upperTitle="THE EVEREST" belowTitle="EXPERIENCE" description="At Everest International School, learning goes far beyond textbooks and classrooms. Join us in a journey filled with vibrant events, lasting friendships, and unforgettable memories. Experience education at its peak — experience Everest!" background="secondary" height="100%" titleAlignment="top">
                 <div className="w-full h-full grid grid-row-2 grid-cols-[repeat(3,20%)] gap-2 m-5 items-center *:flex *:justify-center justify-center">
                     <div className="order-1">
@@ -58,14 +81,13 @@ function Home(){
                 </div>
 
             </SectionContainer>
-            <SectionContainer upperTitle="ABOUT" belowTitle="EVEREST INTERNATIONAL SCHOOL" description="Welcome to Everest International School, a place where learning meets purpose and potential is nurtured with care.
+            <SectionContainer upperTitle="MESSAGE FROM" belowTitle="PRINCIPAL" description="Welcome to Everest International School, a place where learning meets purpose and potential is nurtured with care.
 At Everest International School, we believe education is not just about academic success—it's about shaping responsible global citizens with strong values, sharp minds, and compassionate hearts. Located in the heart of Nepal, our school blends international standards with the rich cultural heritage of our nation, providing a truly holistic learning environment.
 Our mission is to empower students to think critically, communicate effectively, and act ethically. We offer a balanced curriculum that encourages creativity, innovation, and academic excellence while placing equal emphasis on character-building and community service.
 Our dedicated team of educators brings passion, experience, and commitment to every classroom, guiding students through a journey of discovery and growth. We foster an environment where students feel safe, supported, and inspired to achieve their highest potential.
 As the principal of Everest International School, I am proud to lead a community that values curiosity, respect, and lifelong learning. We are not just preparing students for exams—we are preparing them for life.
 Thank you for taking the time to learn more about us. I warmly invite you to visit our school, meet our team, and see firsthand what makes Everest International School a unique and inspiring place to learn.
-With warm regards,
-Dr. Rabindra Shrestha Principal, Everest International School" titleAlignment="left" background="secondary">
+With warm regards, Dr. Rabindra Shrestha Principal, Everest International School" textAlign="left" titleAlignment="left" background="secondary">
                 <div className="flex flex-col items-center">
                     <img src={PrincipalePhoto} alt="" />
                     <h5>Mr. Rajendra Prasad Joshi</h5>
