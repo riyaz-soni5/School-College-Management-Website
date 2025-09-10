@@ -5,7 +5,7 @@ import textLogo from '../assets/imgs/Main-logo-text.png'
 
 function Header(){
     return (
-        <header className='w-full bg-(--primary-color) justify-start md:justify-center flex p-5'>
+        <header className='w-full bg-(--primary-color) justify-start md:justify-center flex'>
             <div className="header-wraper flex items-center gap-x-[20vw]">
 
                 <div className="flex items-center p-1">

@@ -38,20 +38,20 @@ function ProgrammerSection(){
 
 
     return (
-        <div className='border flex m-5 mx-10'>
-            <div>
-                <img src={activeContent?.img} alt="" className=''/>
+        <div className='container bg-white border border-white shadow-white rounded-xl flex justify-around m-5 mx-10 overflow-hidden'>
+            <div className='flex-1'>
+                <img src={activeContent?.img} alt="" className='w-full h-full'/>
             </div>
-            <div className='flex flex-col justify-between border-l'>
-                <div className='border-b flex *:text-2xl *:border-r *:p-2 *:hover:bg-[#DDDDDD] *:focus:bg-[#DDDDDD]'>
-                    <button type='button' onClick={()=> changeTab('see')}>SEE</button>
-                    <button type='button' onClick={()=> changeTab('plus2')}>NEB +2</button>
+            <div className='flex  flex-1 flex-col'>
+                <div className='border rounded-r-xl flex *:text-2xl *:border-r *:p-2 *:hover:bg-[#DDDDDD] *:focus:bg-[#DDDDDD]'>
+                    <button type='button' onClick={()=> changeTab('see')} className='cursor-pointer'>SEE</button>
+                    <button type='button' onClick={()=> changeTab('plus2')} className='cursor-pointer'>NEB +2</button>
                 </div>
-                <div className='p-5'>
+                <div className='p-5 text-justify text-l'>
                     <p>{activeContent?.description}</p>
                 </div>
                 <div>
-                    <p className='text-right mr-5'>Learn More</p>
+                    <p className='text-right mr-5 hover:underline mb-10 cursor-pointer'>Learn More</p>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@ export default function Admission() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Main section with full height between Nav & Footer */}
-      <div className="flex-1 flex justify-center items-center bg-[#154480]">
+      <div className="flex-1 flex justify-center items-center bg-[url(src/assets/imgs/admission-page-img.png)] bg-cover">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl">
           {/* Title */}
           <h1 className="text-[#154480] text-2xl font-bold text-center mb-2">

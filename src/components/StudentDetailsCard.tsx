@@ -9,7 +9,7 @@ type StudentsDetails = {
 function StudentDetailsCard({studentPic, studentName, GPA}:StudentsDetails){
     return (
         <div className="flex flex-col w-full items-center *:text-center">
-            <div style={{backgroundImage: `url(${studentPic})`}} className="w-[200px] h-[200px] bg-contain">
+            <div style={{backgroundImage: `url(${studentPic})`}} className="w-[200px] h-[200px] bg-contain rounded-full">
             </div>
             <div>
                 <div className="text-[var(--secondary-color)]">
