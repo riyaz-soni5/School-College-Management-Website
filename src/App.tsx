@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
@@ -8,8 +8,9 @@ import About from "./pages/About.tsx";
 import AcademicPrograms from "./pages/Academic-Programs.tsx";
 import News from "./pages/News.tsx";
 import Admission from "./pages/Admission.tsx";
-
-import "./App.css";
+import Plus2Page from "./pages/Plus2Page.tsx";
+import SeePage from "./pages/SeePage.tsx";
+import NewsDetails from "./pages/NewsDetails.tsx";
 
 function App() {
   return (
@@ -20,7 +21,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/academic-programs" element={<AcademicPrograms />} />
+          <Route path="/academic-programs/see" element={<SeePage />} />
+          <Route path="/academic-programs/plus2" element={<Plus2Page />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news/:id" element={<NewsDetails />} />
           <Route path="/admission" element={<Admission />} />
         </Routes>
       </main>

@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
+
 interface NewsCardProps {
+  id: string;
   title: string;
   description: string;
   date: string;
@@ -6,13 +9,14 @@ interface NewsCardProps {
 }
 
 export default function NewsCard({
+  id,
   title,
   description,
   date,
   image,
 }: NewsCardProps) {
   return (
-    <div className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 h-full">
+    <div className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 h-full flex flex-col justify-between">
       <img
         src={image}
         alt={title}
@@ -21,6 +25,12 @@ export default function NewsCard({
       <h2 className="text-xl font-bold text-blue-800 mb-2">{title}</h2>
       <p className="text-gray-600 mb-2">{description}</p>
       <p className="text-sm text-gray-500">{date}</p>
+      <Link
+        to={`/news/${id}`}
+        className="mt-3 text-blue-600 font-medium hover:underline"
+      >
+        View More
+      </Link>
     </div>
   );
 }
