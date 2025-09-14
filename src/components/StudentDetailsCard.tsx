@@ -12,7 +12,7 @@ function StudentDetailsCard({studentPic, studentName, GPA}:StudentsDetails){
             <div style={{backgroundImage: `url(${studentPic})`}} className="w-[200px] h-[200px] bg-contain rounded-full">
             </div>
             <div>
-                <div className="text-[var(--secondary-color)]">
+                <div>
                     <p>{studentName}</p>
                 </div>
                 <div>

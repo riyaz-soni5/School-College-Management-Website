@@ -3,6 +3,8 @@ import admissionImg from "../assets/imgs/admission.jpg";
 import vacancyImg from "../assets/imgs/vacancy.jpg";
 import parentsImg from "../assets/imgs/parents.jpg";
 
+import { Link } from 'react-router-dom'
+
 export default function NewsHome() {
   // All news data in one place
   const newsData = [
@@ -35,19 +37,17 @@ export default function NewsHome() {
   const recent = newsData.slice(1, 4);
 
   return (
-    <div className="bg-white py-10 px-6">
+    <div className="">
       {/* Section Heading */}
-      <div className="flex justify-between items-center border-b pb-2 mb-6">
-        <h2 className="text-2xl font-bold text-blue-900">News & Updates</h2>
-        <a href="/news" className="text-blue-600 text-sm hover:underline">
-          Read All News
-        </a>
+      <div className="flex justify-end items-center pb-2 mb-6">
+        <Link to="/news">Read All News</Link>
+          
       </div>
 
       {/* Content Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Featured News (Big Image) */}
-        <div className="md:col-span-2">
+        <div className="md:col-span-2 bg-[var(--primary-color)] text-[var(--secondary-color)] p-5">
           <img
             src={featured.image}
             alt={featured.title}
@@ -58,7 +58,7 @@ export default function NewsHome() {
         </div>
 
         {/* Recent News (Small Images) */}
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col space-y-6 justify-between *:bg-[var(--primary-color)] text-[var(--secondary-color)] *:p-5 ">
           {recent.map((item, index) => (
             <div key={index} className="flex space-x-4">
               <img

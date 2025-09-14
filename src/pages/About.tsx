@@ -5,15 +5,15 @@ import historyBg from "../assets/imgs/history.jpeg";
 
 export default function AboutEIS() {
   return (
-    <div className="bg-gray-100">
-      <div className="max-w-6xl mx-auto py-12 px-6 space-y-16">
+    <div className="bg-[var(--secondary-color)] pt-15">
+      <div className="flex flex-col items-center gap-10 *:text-[var(--primary-color)]">
         {/* Section Title */}
-        <h1 className="text-3xl font-bold text-center text-blue-900">
+        <h1 className="text-3xl font-bold text-center">
           About Everest International School
         </h1>
 
         {/* Overview */}
-        <p className="text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
+        <p className="leading-relaxed text-center max-w-3xl mx-auto">
           Everest International School (EIS), located in the heart of Kathmandu,
           is a modern institution dedicated to nurturing the leaders of
           tomorrow. Since its establishment, EIS has become one of the leading
@@ -35,7 +35,7 @@ export default function AboutEIS() {
 
         {/* History */}
         <div
-          className="relative w-full bg-cover bg-center bg-no-repeat"
+          className="relative w-screen bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${historyBg})`,
             minHeight: "400px",
@@ -81,10 +81,10 @@ export default function AboutEIS() {
         </div>
 
         {/* Goals Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-[var(--primary-color)] *:text-[var(--secondary-color)] p-20">
           <div>
-            <h2 className="text-2xl font-semibold text-blue-900 mb-4">Goals</h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 pl-2">
+            <h2 className="text-2xl font-semibold mb-4">Goals</h2>
+            <ul className="list-disc list-inside  space-y-2 pl-2">
               <li>
                 Provide world-class education with a strong emphasis on critical
                 thinking, problem-solving, and a deep understanding of core
@@ -123,7 +123,7 @@ export default function AboutEIS() {
         </div>
 
         {/* Achievements Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-[var(--secondary-color)] *:text-[var(--primary-color)] p-20">
           <div className="flex justify-center">
             <img
               src={goalsImg}
@@ -132,10 +132,10 @@ export default function AboutEIS() {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold text-blue-900 mb-4">
+            <h2 className="text-2xl font-semibold mb-4">
               Achievements
             </h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 pl-2">
+            <ul className="list-disc list-inside space-y-2 pl-2">
               <li>
                 Consistently produced excellent results in national and
                 international examinations, including SEE, +2, and various
@@ -167,12 +167,12 @@ export default function AboutEIS() {
         </div>
 
         {/* Special Awards Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-[var(--primary-color)] *:text-[var(--secondary-color)] p-20">
           <div>
-            <h2 className="text-2xl font-semibold text-blue-900 mb-4">
+            <h2 className="text-2xl font-semibold mb-4">
               Special Awards
             </h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 pl-2">
+            <ul className="list-disc list-inside  space-y-2 pl-2">
               <li>
                 The EIS Excellence Award for outstanding academic and
                 extracurricular performance, celebrating students who embody the
@@ -208,19 +208,19 @@ export default function AboutEIS() {
               className="rounded-xl shadow-md object-cover h-100"
             />
           </div>
+          <p style={{color: "var(--secondary-color)"}} className="leading-relaxed text-center bg-[var(--primary-color)] w-full p-20 col-span-2">
+            Everest International School is more than an institution—it’s a
+            dynamic community where students are inspired to dream big and achieve
+            their goals. Guided by experienced and passionate faculty and a
+            progressive vision, EIS continues to uphold its mission of{" "}
+            <span className="italic">
+              "Excellence in Education with Global Values."
+            </span>{" "}
+            We are dedicated to building a brighter future, one student at a time.
+          </p>
+          
         </div>
-
         {/* Closing Statement */}
-        <p className="text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
-          Everest International School is more than an institution—it’s a
-          dynamic community where students are inspired to dream big and achieve
-          their goals. Guided by experienced and passionate faculty and a
-          progressive vision, EIS continues to uphold its mission of{" "}
-          <span className="italic">
-            "Excellence in Education with Global Values."
-          </span>{" "}
-          We are dedicated to building a brighter future, one student at a time.
-        </p>
       </div>
     </div>
   );
