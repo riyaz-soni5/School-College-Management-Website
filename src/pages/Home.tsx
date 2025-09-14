@@ -16,7 +16,6 @@ import ProgrammerSection from "../components/ProgrammesSection";
 import CounterCard from '../components/CounterCard';
 import HighlightedNews from '../components/HighlightedNews';
 import { Palette, Trophy, User, UserStar } from 'lucide-react';
-import Gallery from '../components/Gallery';
 import Testimonial from '../components/Testimonial';
 
 
@@ -81,10 +80,10 @@ function Home(){
             </SectionContainer>
             <SectionContainer background='primary' upperTitle='WHY CHOOSE US?' description="At Everest International School, we combine academic excellence with a supportive, inclusive environment that helps every student thrive. Our experienced faculty, modern facilities, and focus on real-world skills ensure you’re not just prepared for exams, but for life beyond the classroom. Whether you're aiming for university, a career, or personal growth, we provide the resources, guidance, and opportunities to help you succeed."> 
                 <div className='flex items-center justify-around w-full'>
-                        <CounterCard icon={Trophy} iconBg='#FFF9C4' counter= "15+"  description='Years Of Excellence' />
-                        <CounterCard icon={User} iconBg='#C8E6C9' counter='500+' description='Total Student Enrolled' />
-                        <CounterCard icon={UserStar} iconBg='#BBDEFB' counter='100+' description='Total Teacher/Staff' />
-                        <CounterCard icon={Palette} iconBg='#FFE0B2' counter='50+' description='Extra Activities'/>
+                        <CounterCard icon={Trophy} iconBg='#FFF9C4' counter= {15}  description='Years Of Excellence' />
+                        <CounterCard icon={User} iconBg='#C8E6C9' counter={500} description='Total Student Enrolled' />
+                        <CounterCard icon={UserStar} iconBg='#BBDEFB' counter={100} description='Total Teacher/Staff' />
+                        <CounterCard icon={Palette} iconBg='#FFE0B2' counter={50} description='Extra Activities'/>
 
                 </div>
             </SectionContainer>

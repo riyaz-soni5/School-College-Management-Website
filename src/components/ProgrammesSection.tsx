@@ -43,7 +43,7 @@ function ProgrammerSection(){
                 <img src={activeContent?.img} alt="" className='w-full h-full'/>
             </div>
             <div className='flex  flex-1 flex-col'>
-                <div className='border rounded-r-xl flex *:text-2xl *:border-r *:p-2 *:hover:bg-[#DDDDDD] *:focus:bg-[#DDDDDD]'>
+                <div className='border border-l-0 rounded-r-xl flex *:text-2xl *:border-r *:p-2 *:hover:bg-[#DDDDDD] *:focus:bg-[#DDDDDD]'>
                     <button type='button' onClick={()=> changeTab('see')} className='cursor-pointer'>SEE</button>
                     <button type='button' onClick={()=> changeTab('plus2')} className='cursor-pointer'>NEB +2</button>
                 </div>

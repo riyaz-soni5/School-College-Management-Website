@@ -1,10 +1,11 @@
 import type { LucideIcon } from "lucide-react"
+import CountUp from "react-countup"
 
 
 type CounterValue = {
     icon: LucideIcon,
     iconBg: string,
-    counter: string,
+    counter: number,
     description: string,
 }
 
@@ -17,7 +18,7 @@ function CounterCard({icon: Icon, iconBg, counter, description}:CounterValue){
                     <Icon size={80} strokeWidth={1} color="black"/>
                 </div>
                 <div className="font-bold">
-                    {counter}
+                    <CountUp end={counter} suffix="+"/>
                 </div>
                 <div className="text-2xl">
                     {description}
