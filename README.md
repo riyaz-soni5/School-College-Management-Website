@@ -1,69 +1,74 @@
-# React + TypeScript + Vite
+# Everest International School 🏫
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and informative college website built as a frontend-only project using React and TypeScript. This website showcases the Everest International School's history, academic programs, admission information, student experiences, and the latest news and updates.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📚 About the Project
 
-## Expanding the ESLint configuration
+This project is a practice-based frontend website designed to simulate a real-world educational institution's online presence. It features multiple sections including:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- About the College
+- Admission Information
+- Student Experiences
+- History of the School
+- Academic Programs
+- News and Announcements
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+It is built using **React**, **TypeScript**, **HTML**, and **CSS** with **Vite** as the build tool for a lightning-fast development experience.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠 Tech Stack
+
+- **Framework:** [React](https://reactjs.org/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com)
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed on your machine
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/riyaz-soni5/everest-international-school.git
+
+# Navigate to the project directory
+cd everest-international-school
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 👨‍💻 Authors
+Riyaj Soni	(@riyaz-soni5)
+Mahan Shrestha	(@Mahan1132)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## License
+This project is licensed under the MIT License.
+Feel free to use, modify, and share!
+
+---
+
+## 🙏 Acknowledgements
+Thanks to the open-source community and documentation that helped guide us during the build.
+
+
+
+
+
