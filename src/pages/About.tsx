@@ -8,8 +8,8 @@ export default function AboutEIS() {
     <div className="bg-[var(--secondary-color)] pt-15">
       <div className="flex flex-col items-center gap-10 *:text-[var(--primary-color)]">
         {/* Section Title */}
-        <h1 className="text-3xl font-bold text-center">
-          About Everest International School
+        <h1 className="md:text-4xl text-2xl text-center">
+          ABOUT EVEREST INTERNATIONAL SCHOOL
         </h1>
 
         {/* Overview */}
@@ -46,7 +46,7 @@ export default function AboutEIS() {
 
           {/* Content */}
           <div className="relative text-white px-8 py-16 text-center space-y-6 ">
-            <h2 className="text-3xl font-semibold">Our History</h2>
+            <h2 className="md:text-4xl text-2xl font-bold text-center">OUR HISTORY</h2>
             <p className="max-w-4xl mx-auto leading-relaxed">
               Established in the early 2000s, Everest International School began
               with a simple yet ambitious mission — to provide a high-quality
@@ -83,7 +83,7 @@ export default function AboutEIS() {
         {/* Goals Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-[var(--primary-color)] *:text-[var(--secondary-color)] p-20">
           <div>
-            <h2 className="text-2xl font-semibold mb-4">Goals</h2>
+            <h2 className="md:text-4xl text-2xl font-bold mb-4">GOALS</h2>
             <ul className="list-disc list-inside  space-y-2 pl-2">
               <li>
                 Provide world-class education with a strong emphasis on critical
@@ -132,8 +132,8 @@ export default function AboutEIS() {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold mb-4">
-              Achievements
+            <h2 className="md:text-4xl text-2xl font-bold mb-4">
+              ACHIEVEMENTS
             </h2>
             <ul className="list-disc list-inside space-y-2 pl-2">
               <li>
@@ -169,8 +169,8 @@ export default function AboutEIS() {
         {/* Special Awards Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-[var(--primary-color)] *:text-[var(--secondary-color)] p-20">
           <div>
-            <h2 className="text-2xl font-semibold mb-4">
-              Special Awards
+            <h2 className="md:text-4xl text-2xl font-bold mb-4">
+              SPECIAL AWARDS
             </h2>
             <ul className="list-disc list-inside  space-y-2 pl-2">
               <li>
