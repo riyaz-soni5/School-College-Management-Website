@@ -143,4 +143,195 @@ The school fair aims to promote creativity, teamwork, and community engagement w
     date: "2025-10-25",
     image: melaImg,
   },
+  {
+    id: "7",
+    title: "School Annual Day",
+    description:
+      "Join us for a day full of cultural programs and fun activities.",
+    content: `Everest International School celebrated its Annual Day with grandeur and excitement. The event showcased the remarkable talents of our students through various performances:
+
+- Dance Performances: Class 5 to 8 students presented lively and colorful dances that highlighted creativity and teamwork.
+
+- One-Act Play: Class 9 students performed an engaging one-act play, demonstrating excellent acting and storytelling skills.
+
+- Music Recital: The school choir performed beautiful musical pieces, filling the auditorium with harmony and joy.
+
+Awards and Recognition:
+
+- Academic excellence awards were presented to students who achieved outstanding results.
+
+- Sports achievers were recognized for their hard work, determination, and victories in various competitions.
+
+-Best art projects were acknowledged, showcasing creativity and innovation among students.
+
+The Annual Day was a memorable celebration bringing together students, teachers, and parents, fostering a sense of community, pride, and accomplishment. Everyone enjoyed the day full of entertainment, learning, and joyous moments.`,
+    date: "2025-09-10",
+    image: annualImg,
+  },
+  {
+    id: "8",
+    title: "Admission Open for Class 11",
+    description:
+      "Admissions are now open for the academic year 2025-26 for Class 11.",
+    content: `Everest International School is now accepting applications for Class 11 admissions.
+
+Form Distribution: Admission forms will be available from 15th September, 2025 at the school office and online.
+
+Eligibility Criteria:
+
+- Completion of Class 10 from a recognized school in Kathmandu or equivalent.
+
+- Minimum required grades in core subjects (English, Mathematics, Science).
+
+- Submission of academic transcripts and character certificate.
+
+- Admission may include a personal interview or entrance test depending on the stream chosen.
+
+- Prospective students and parents are encouraged to visit the school for guidance and detailed information.`,
+    date: "2025-09-05",
+    image: admissionImg,
+  },
+  {
+    id: "9",
+    title: "Vacancy Announcement",
+    description:
+      "Strong understanding of Classroom Management and excellent communication skills.",
+    content: `Everest International School is looking for a passionate English Teacher to join our team.
+
+Requirements:
+
+- Bachelor's degree in English or Education.
+
+- Minimum 2 years teaching experience preferred.
+
+- Strong communication and interpersonal skills.
+
+- Commitment to student development and school activities.
+
+Interested candidates can submit their CV and cover letter to info@everstinternatioal.edu.np or visit the school office by 10th August, 2025.`,
+    date: "2025-08-05",
+    image: vacancyImg,
+  },
+  {
+    id: "10",
+    title: "Parents Day of Class 8-9",
+    description: "Parents Day of Class 8-9 on August 2, 2025.",
+    content: `Everest International School organized Parents Day for Classes 8 and 9, creating a platform for students to showcase their talents and interact with parents. Highlights included:
+
+- One-Act Play: Students delivered an engaging and entertaining play, reflecting teamwork and creativity.
+
+- Singing Performances: Talented students from Classes 8 and 9 performed melodious songs for their parents.
+
+- Dance Performances: Colorful and energetic dances entertained and impressed the audience.
+
+The day strengthened the bond between parents, teachers, and students, celebrating achievements and fostering school spirit.`,
+    date: "2025-07-25",
+    image: parentsImg,
+  },
+  {
+    id: "11",
+    title: "School Fair 2025-2026",
+    description: "School Fair on December 21, 2025.",
+    content: `Everest International School is excited to announce School Fair 2025, a fun-filled event for students, parents, and the community.
+
+Activities Include:
+
+- Games and competitions for all age groups.
+
+- Food stalls offering a variety of delicacies.
+
+- Exhibitions of student's art and projects.
+
+- Live performances including music, dance, and drama.
+
+The school fair aims to promote creativity, teamwork, and community engagement while creating memorable experiences for everyone attending.`,
+    date: "2025-10-25",
+    image: melaImg,
+  },
+  {
+    id: "12",
+    title: "School Annual Day",
+    description:
+      "Join us for a day full of cultural programs and fun activities.",
+    content: `Everest International School celebrated its Annual Day with grandeur and excitement. The event showcased the remarkable talents of our students through various performances:
+
+- Dance Performances: Class 5 to 8 students presented lively and colorful dances that highlighted creativity and teamwork.
+
+- One-Act Play: Class 9 students performed an engaging one-act play, demonstrating excellent acting and storytelling skills.
+
+- Music Recital: The school choir performed beautiful musical pieces, filling the auditorium with harmony and joy.
+
+Awards and Recognition:
+
+- Academic excellence awards were presented to students who achieved outstanding results.
+
+- Sports achievers were recognized for their hard work, determination, and victories in various competitions.
+
+-Best art projects were acknowledged, showcasing creativity and innovation among students.
+
+The Annual Day was a memorable celebration bringing together students, teachers, and parents, fostering a sense of community, pride, and accomplishment. Everyone enjoyed the day full of entertainment, learning, and joyous moments.`,
+    date: "2025-09-10",
+    image: annualImg,
+  },
+  {
+    id: "13",
+    title: "Parents Day of Class 8-9",
+    description: "Parents Day of Class 8-9 on August 2, 2025.",
+    content: `Everest International School organized Parents Day for Classes 8 and 9, creating a platform for students to showcase their talents and interact with parents. Highlights included:
+
+- One-Act Play: Students delivered an engaging and entertaining play, reflecting teamwork and creativity.
+
+- Singing Performances: Talented students from Classes 8 and 9 performed melodious songs for their parents.
+
+- Dance Performances: Colorful and energetic dances entertained and impressed the audience.
+
+The day strengthened the bond between parents, teachers, and students, celebrating achievements and fostering school spirit.`,
+    date: "2025-07-25",
+    image: parentsImg,
+  },
+  {
+    id: "14",
+    title: "School Fair 2025-2026",
+    description: "School Fair on December 21, 2025.",
+    content: `Everest International School is excited to announce School Fair 2025, a fun-filled event for students, parents, and the community.
+
+Activities Include:
+
+- Games and competitions for all age groups.
+
+- Food stalls offering a variety of delicacies.
+
+- Exhibitions of student's art and projects.
+
+- Live performances including music, dance, and drama.
+
+The school fair aims to promote creativity, teamwork, and community engagement while creating memorable experiences for everyone attending.`,
+    date: "2025-10-25",
+    image: melaImg,
+  },
+  {
+    id: "15",
+    title: "School Annual Day",
+    description:
+      "Join us for a day full of cultural programs and fun activities.",
+    content: `Everest International School celebrated its Annual Day with grandeur and excitement. The event showcased the remarkable talents of our students through various performances:
+
+- Dance Performances: Class 5 to 8 students presented lively and colorful dances that highlighted creativity and teamwork.
+
+- One-Act Play: Class 9 students performed an engaging one-act play, demonstrating excellent acting and storytelling skills.
+
+- Music Recital: The school choir performed beautiful musical pieces, filling the auditorium with harmony and joy.
+
+Awards and Recognition:
+
+- Academic excellence awards were presented to students who achieved outstanding results.
+
+- Sports achievers were recognized for their hard work, determination, and victories in various competitions.
+
+-Best art projects were acknowledged, showcasing creativity and innovation among students.
+
+The Annual Day was a memorable celebration bringing together students, teachers, and parents, fostering a sense of community, pride, and accomplishment. Everyone enjoyed the day full of entertainment, learning, and joyous moments.`,
+    date: "2025-09-10",
+    image: annualImg,
+  },
 ];

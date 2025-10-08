@@ -1,19 +1,23 @@
 @import "tailwindcss";
 
-:root{
-    --primary-color: #F5F6F7;
-    --secondary-color: #154480;
-    font-size: 16px;
-    
+:root {
+  --primary-color: #f5f6f7;
+  --secondary-color: #154480;
+  font-size: 16px;
 }
 
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
+/* Tailwind custom components */
+@layer components {
+  .container {
+    @apply max-w-6xl mx-auto;
+  }
 }
 
 /* header style */
-
-.active{
-    color:red;
+.active {
+  color: red;
 }
