@@ -13,12 +13,6 @@ import StudentPhoto2 from "../assets/imgs/student-photo-guy.png";
 import PrincipalePhoto from "../assets/imgs/principal-photo.png";
 import StudentDetailsCard from "../components/StudentDetailsCard";
 import ProgrammerSection from "../components/ProgrammesSection";
-<<<<<<< HEAD
-import CounterCard from '../components/CounterCard';
-import HighlightedNews from '../components/HighlightedNews';
-import { Palette, Trophy, User, UserStar, Quote } from 'lucide-react';
-import Testimonial from '../components/Testimonial';
-=======
 import CounterCard from "../components/CounterCard";
 import HighlightedNews from "../components/HighlightedNews";
 import { Palette, Trophy, User, UserStar } from "lucide-react";
@@ -26,7 +20,6 @@ import Testimonial from "../components/Testimonial";
 import NoticePopup from "../components/NoticePopup";
 import { noticeData } from "../data/noticeData";
 import { useState } from "react";
->>>>>>> 3366ebb (Created Notice page, made some pages responsive, updated Admission page)
 
 function Home() {
   const [currentNotice, setCurrentNotice] = useState(0);
@@ -96,54 +89,6 @@ function Home() {
               <img src={CollageImg1} alt="" />
             </div>
 
-<<<<<<< HEAD
-                        </span>
-                        <span>
-                            <button className='block text-xl border p-3 rounded-sm hover:bg-[var(--secondary-color)] cursor-pointer'><NavLink to="/admission">Apply Now</NavLink></button>
-                        </span>
-                    </h1>
-                    
-                </div>
-                
-            </SectionContainer>
-            <SectionContainer textAlign="left" titleAlignment="left" background="secondary">
-
-                <div className='flex flex-col items-center'>
-                    <div className='text-center'>
-                        <p className='md:text-4xl text-2xl'>MESSAGE</p>
-                        <p className='md:text-4xl text-2xl font-bold text-center'>FROM PRINCIPAL</p>
-                    </div>
-
-                    <div className="flex flex-row items-center gap-10">
-
-                        <div className='flex-1'>
-
-                            <p className='text-base text-justify'>
-                                <Quote className='rotate-180' size={50} />
-                                <br />
-                                Welcome to Everest International School, a place where learning meets purpose and potential is nurtured with care.At Everest International School, we believe education is not just about academic success—it's about shaping responsible global citizens with strong values, sharp minds, and compassionate hearts. Located in the heart of Nepal, our school blends international standards with the rich cultural heritage of our nation, providing a truly holistic learning environment.Our mission is to empower students to think critically, communicate effectively, and act ethically. We offer a balanced curriculum that encourages creativity, innovation, and academic excellence while placing equal emphasis on character-building and community service.Our dedicated team of educators brings passion, experience, and commitment to every classroom, guiding students through a journey of discovery and growth. We foster an environment where students feel safe, supported, and inspired to achieve their highest potential.As the principal of Everest International School, I am proud to lead a community that values curiosity, respect, and lifelong learning. We are not just preparing students for exams—we are preparing them for life.Thank you for taking the time to learn more about us. I warmly invite you to visit our school, meet our team, and see firsthand what makes Everest International School a unique and inspiring place to learn.With warm regards,
-                                <br />
-                                Mr.Rajendra Prasad Joshi,
-                                <br />
-                                Principal
-                            </p>
-
-
-                        </div>
-                        <div className='flex flex-col items-center'>
-                            <img src={PrincipalePhoto} alt="" />
-                            <p className='block'>Mr. Rajendra Prasad Joshi</p>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </SectionContainer>
-            <SectionContainer upperTitle="THE EVEREST" belowTitle="EXPERIENCE" description="At Everest International School, learning goes far beyond textbooks and classrooms. Join us in a journey filled with vibrant events, lasting friendships, and unforgettable memories. Experience education at its peak — experience Everest!" background="primary" height="100%" titleAlignment="top">
-                <div className="w-full h-full grid grid-row-2 grid-cols-[repeat(3,20%)] gap-2 m-5 items-center *:flex *:justify-center justify-center">
-                    <div className="order-1">
-                        <img src={CollageImg1} alt="" />
-=======
             <div className="order-2">
               <img src={CollageImg2} alt="" />
             </div>
@@ -158,7 +103,6 @@ function Home() {
             </div>
           </div>
         </SectionContainer>
->>>>>>> 3366ebb (Created Notice page, made some pages responsive, updated Admission page)
 
         <SectionContainer
           background="primary"
