@@ -2,7 +2,7 @@ import { useState } from "react";
 import NewsCard from "../components/NewsCard";
 import Marquee from "react-fast-marquee";
 import { newsData } from "../data/newsData";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function NewsPage() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -55,7 +55,7 @@ export default function NewsPage() {
           {totalPages > 1 && (
             <div className="flex justify-center mt-8 space-x-2">
               {/* Prev Arrow */}
-              <button
+              {/* <button
                 onClick={() =>
                   currentPage > 1 && setCurrentPage(currentPage - 1)
                 }
@@ -67,7 +67,7 @@ export default function NewsPage() {
                 }`}
               >
                 <FaArrowLeft />
-              </button>
+              </button> */}
 
               {/* Page Numbers */}
               {Array.from({ length: totalPages }, (_, index) => index + 1).map(
@@ -86,7 +86,7 @@ export default function NewsPage() {
                 )
               )}
 
-              {/* Next Arrow */}
+              {/* Next Arrow
               <button
                 onClick={() =>
                   currentPage < totalPages && setCurrentPage(currentPage + 1)
@@ -99,7 +99,7 @@ export default function NewsPage() {
                 }`}
               >
                 <FaArrowRight />
-              </button>
+              </button> */}
             </div>
           )}
         </div>
