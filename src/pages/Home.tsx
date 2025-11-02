@@ -144,7 +144,8 @@ function Home() {
           titleAlignment="left"
           background="secondary"
         >
-          <div className="grid grid-cols-3 grid-rows-2 w-full h-full">
+          {/* <div className="grid grid-cols-3 grid-rows-2 w-full h-full"> */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center w-full">
             <StudentDetailsCard
               studentPic={StudentPhoto1}
               studentName="Aayusha Karki"
