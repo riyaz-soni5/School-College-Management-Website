@@ -65,17 +65,17 @@ export default function Admission() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      {/* background Section  */}
       <div className="flex-1 relative bg-[url('src/assets/imgs/admission-page-img.png')] bg-cover bg-center">
-        {/* Overlay for opacity */}
-        <div className="absolute inset-0 bg-black/30"></div>
-
-        {/* Container to wrap both image content and form */}
-        <div className="container relative z-10 flex justify-center items-center min-h-screen">
-          <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl">
-            <h1 className="text-[#154480] text-2xl font-bold text-center mb-2">
+        {/* Container to wrap both image content and form (FORM CONTENT) */}
+        {/* <div className="container relative z-10 flex justify-center items-center min-h-screen"> */}
+        <div className="container relative z-10 flex justify-center items-center min-h-screen px-4 sm:px-6">
+          {/* <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl"> */}
+          <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg w-full max-w-xl sm:max-w-2xl md:max-w-3xl">
+            <h1 className="text-[#154480] text-2xl font-bold text-center mb-3">
               ADMISSION
             </h1>
-            <p className="text-gray-600 text-center mb-6 whitespace-nowrap">
+            <p className="text-gray-600 text-center mb-6">
               Our admission counselors will sort down your queries. We will get
               back to you shortly.
             </p>
@@ -83,7 +83,8 @@ export default function Admission() {
             {/* Form */}
             <form className="space-y-4" onSubmit={handleSubmit}>
               {/* Row 1 */}
-              <div className="grid grid-cols-2 gap-4">
+              {/* <div className="grid grid-cols-2 gap-4"> */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
                   type="text"
                   name="firstName"
@@ -172,6 +173,8 @@ export default function Admission() {
             </form>
           </div>
         </div>
+        {/* BLACK OVERLAY*/}
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       <ToastContainer />

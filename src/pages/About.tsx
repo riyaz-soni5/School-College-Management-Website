@@ -5,16 +5,14 @@ import historyBg from "../assets/imgs/history.jpeg";
 
 export default function AboutEIS() {
   return (
-    <div className="bg-[var(--secondary-color)] pt-15">
-      {/* main wrapper with container */}
-      <div className="container flex flex-col items-center gap-10 *:text-[var(--primary-color)]">
-        {/* Section Title */}
-        <h1 className="md:text-xl font-bold text-center">
+    <div className="bg-[var(--secondary-color)] text-[var(--primary-color)]">
+      {/* About Overview */}
+      <div className="container flex flex-col items-center gap-6 py-16 px-4 sm:px-6">
+        <h1 className="text-2xl md:text-3xl font-bold text-center">
           About Everest International School
         </h1>
 
-        {/* Overview */}
-        <p className="leading-relaxed text-justify">
+        <p className="leading-relaxed text-justify text-[var(--primary-color)]/90">
           Everest International School (EIS), located in the heart of Kathmandu,
           is a modern institution dedicated to nurturing the leaders of
           tomorrow. Since its establishment, EIS has become one of the leading
@@ -24,7 +22,8 @@ export default function AboutEIS() {
           environment and state-of-the-art facilities ensures that every student
           can reach their full potential.
         </p>
-        <p className="text-gray-700 leading-relaxed text-justify">
+
+        <p className="text-[var(--primary-color)]/80 leading-relaxed text-justify">
           At EIS, we believe in holistic education. Our vision combines strong
           academic programs with a wide array of extracurricular opportunities,
           fostering not just intellectual growth but also creativity,
@@ -35,20 +34,22 @@ export default function AboutEIS() {
         </p>
       </div>
 
-      {/* History */}
+      {/* History Section */}
       <div
-        className="relative w-screen bg-cover bg-center bg-no-repeat"
+        className="relative w-full bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${historyBg})`,
           minHeight: "400px",
         }}
       >
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/60 to-blue-900/20"></div>
+        {/* Gradient Overlay  */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-blue-900/30"></div>
 
         {/* Content */}
-        <div className="relative text-white px-8 py-16 text-center space-y-6 container">
-          <h2 className="text-3xl font-semibold">Our History</h2>
+        <div className="relative text-white container px-4 sm:px-6 py-16 space-y-6">
+          <h2 className="text-3xl font-semibold text-center md:text-left">
+            Our History
+          </h2>
           <p className="leading-relaxed text-justify">
             Established in the early 2000s, Everest International School began
             with a simple yet ambitious mission — to provide a high-quality
@@ -82,12 +83,12 @@ export default function AboutEIS() {
         </div>
       </div>
 
-      {/* Goals Section */}
-      <div className="bg-[var(--primary-color)] *:text-[var(--secondary-color)] py-20">
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      {/*  Goals Section */}
+      <div className="bg-[var(--primary-color)] text-[var(--secondary-color)] py-16">
+        <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-4 sm:px-6">
           <div>
             <h2 className="text-2xl font-semibold mb-4">Goals</h2>
-            <ul className="list-disc list-inside space-y-2 pl-2 text-justify">
+            <ul className="list-disc list-inside space-y-3 text-justify">
               <li>
                 Provide world-class education with a strong emphasis on critical
                 thinking, problem-solving, and a deep understanding of core
@@ -120,25 +121,25 @@ export default function AboutEIS() {
             <img
               src={schoolImg}
               alt="EIS Goals"
-              className="rounded-xl shadow-md object-cover h-100"
+              className="rounded-xl shadow-md object-cover w-full max-w-md md:max-w-full"
             />
           </div>
         </div>
       </div>
 
       {/* Achievements Section */}
-      <div className="bg-[var(--secondary-color)] *:text-[var(--primary-color)] py-20">
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div className="flex justify-center">
+      <div className="bg-[var(--secondary-color)] text-[var(--primary-color)] py-16">
+        <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-4 sm:px-6">
+          <div className="flex justify-center order-1 md:order-none">
             <img
               src={goalsImg}
               alt="EIS Achievements"
-              className="rounded-xl shadow-md object-cover h-100"
+              className="rounded-xl shadow-md object-cover w-full max-w-md md:max-w-full"
             />
           </div>
           <div>
             <h2 className="text-2xl font-semibold mb-4">Achievements</h2>
-            <ul className="list-disc list-inside space-y-2 pl-2 text-justify">
+            <ul className="list-disc list-inside space-y-3 text-justify">
               <li>
                 Consistently produced excellent results in national and
                 international examinations, including SEE, +2, and various
@@ -171,11 +172,11 @@ export default function AboutEIS() {
       </div>
 
       {/* Special Awards Section */}
-      <div className="bg-[var(--primary-color)] *:text-[var(--secondary-color)] py-20">
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="bg-[var(--primary-color)] text-[var(--secondary-color)] py-16">
+        <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 items-start px-4 sm:px-6">
           <div>
             <h2 className="text-2xl font-semibold mb-4">Special Awards</h2>
-            <ul className="list-disc list-inside space-y-2 pl-2 text-justify">
+            <ul className="list-disc list-inside space-y-3 text-justify">
               <li>
                 The EIS Excellence Award for outstanding academic and
                 extracurricular performance, celebrating students who embody the
@@ -204,27 +205,27 @@ export default function AboutEIS() {
               </li>
             </ul>
           </div>
+
           <div className="flex justify-center">
             <img
               src={awardsImg}
               alt="EIS Awards"
-              className="rounded-xl shadow-md object-cover h-100"
+              className="rounded-xl shadow-md object-cover w-full max-w-md md:max-w-full"
             />
           </div>
-          <p
-            style={{ color: "var(--secondary-color)" }}
-            className="leading-relaxed text-justify bg-[var(--primary-color)] w-full p-20 col-span-2 container"
-          >
-            Everest International School is more than an institution—it’s a
-            dynamic community where students are inspired to dream big and
-            achieve their goals. Guided by experienced and passionate faculty
-            and a progressive vision, EIS continues to uphold its mission of{" "}
-            <span className="italic">
-              "Excellence in Education with Global Values."
-            </span>{" "}
-            We are dedicated to building a brighter future, one student at a
-            time.
-          </p>
+
+          {/* Closing Paragraph */}
+          <div className="col-span-1 md:col-span-2">
+            <p className="bg-[var(--primary-color)] text-[var(--secondary-color)] leading-relaxed text-justify p-6 md:p-10 lg:p-16 rounded-xl shadow-sm">
+              Everest International School is more than an institution—it’s a
+              dynamic community where students are inspired to dream big and
+              achieve their goals. Guided by experienced and passionate faculty
+              and a progressive vision, EIS continues to uphold its mission of{" "}
+              <span className="italic">
+                "Excellence in Education with Global Values."
+              </span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
