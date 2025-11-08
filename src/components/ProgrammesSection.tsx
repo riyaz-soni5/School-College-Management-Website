@@ -34,12 +34,12 @@ function ProgrammerSection() {
   let activeContent = Tabs.find((item) => item.id == activeTab);
 
   return (
-    <div className="container bg-white border border-white shadow-white rounded-xl flex justify-around m-5 mx-10 overflow-hidden">
-      <div className="flex-1">
+    <div className="container bg-white border border-white shadow-white rounded-xl flex flex-col md:flex-row justify-around md:m-5 md:mx-10 overflow-hidden">
+      <div className="md:flex-1">
         <img src={activeContent?.img} alt="" className="w-full h-full" />
       </div>
-      <div className="flex  flex-1 flex-col">
-        <div className="border border-l-0 rounded-r-xl flex *:text-2xl *:border-r *:p-2 *:hover:bg-[#DDDDDD] *:focus:bg-[#DDDDDD]">
+      <div className="flex  md:flex-1 flex-col">
+        <div className="border md:border-l-0 md:rounded-r-xl flex *:text-2xl *:border-r *:p-2 *:hover:bg-[#DDDDDD] *:focus:bg-[#DDDDDD]">
           <button
             type="button"
             onClick={() => changeTab("see")}

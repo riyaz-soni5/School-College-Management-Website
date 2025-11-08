@@ -21,7 +21,7 @@ interface TestomonialData {
 
 function Testimonial({img,name,description}:TestomonialData){
     return (
-        <div className="justify-center ">
+        <div className="justify-center">
             <div className="container bg-white border border-white shadow-white text-[var(--secondary-color)] rounded-md relative p-10">
                 <div className="flex flex-col items-center">
                     <img src={img} alt="" className="w-20 rounded-full border" />
@@ -41,7 +41,7 @@ function TestimonialContainer(){
 
     return(
 
-        <div className="w-full p-10 container">
+        <div className="w-screen p-10 container">
 
             <Swiper
             autoplay = {{
