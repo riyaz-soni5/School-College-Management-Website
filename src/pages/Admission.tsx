@@ -31,16 +31,24 @@ export default function Admission() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (
-      !formData.firstName ||
-      !formData.lastName ||
-      !formData.email ||
-      !formData.address ||
-      !formData.phone ||
-      !formData.program ||
-      !formData.queries
-    ) {
-      toast.error("Please fill in all the fields!", {
+    type FormKeys = keyof typeof formData;
+
+    const requiredFields: { key: FormKeys; label: string }[] = [
+      { key: "firstName", label: "First Name" },
+      { key: "lastName", label: "Last Name" },
+      { key: "email", label: "Email Address" },
+      { key: "address", label: "Address" },
+      { key: "phone", label: "Phone Number" },
+      { key: "program", label: "Program" },
+      { key: "queries", label: "Query" },
+    ];
+
+    const missing = requiredFields
+      .filter((field) => !formData[field.key])
+      .map((field) => field.label);
+
+    if (missing.length > 0) {
+      toast.error(`Please fill in: ${missing.join(", ")}`, {
         position: "top-center",
         autoClose: 3000,
       });
@@ -162,10 +170,10 @@ export default function Admission() {
               ></textarea>
 
               {/* Submit Button */}
-              <div className="flex justify-end">
+              <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="bg-[#154480] text-white font-bold px-4 py-2 rounded hover:bg-blue-900"
+                  className="bg-[var(--secondary-color)] text-white font-bold px-4 py-2 rounded hover:bg-blue-900"
                 >
                   SUBMIT
                 </button>

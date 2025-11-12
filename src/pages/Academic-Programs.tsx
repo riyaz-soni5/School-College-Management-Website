@@ -33,18 +33,18 @@ function SeePage() {
   ];
 
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: true,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } },
-    ],
+    // autoplaySpeed: 1500,
+    // arrows: true,
+    // responsive: [
+    //   { breakpoint: 1024, settings: { slidesToShow: 2 } },
+    //   { breakpoint: 640, settings: { slidesToShow: 1 } },
+    // ],
   };
 
   return (
@@ -69,8 +69,8 @@ function SeePage() {
       </section>
 
       {/* Tabs */}
-      <section className="bg-[#0a4d92] text-white py-12">
-        <div className="max-w-5xl mx-auto px-6">
+      <section className="bg-[var(--secondary-color)] text-white py-12 min-h-[560px]">
+        <div className="max-w-5xl mx-auto px-6 h-full">
           <div className="flex flex-wrap border-b border-gray-400 mb-8">
             {tabs.map((tab) => (
               <button
@@ -87,7 +87,7 @@ function SeePage() {
             ))}
           </div>
 
-          <div className="bg-white text-blue-900 rounded-lg p-8 shadow-lg space-y-4">
+          <div className="bg-white text-blue-900 rounded-lg p-10 shadow-lg space-y-4 h-105">
             {activeTab === "subjects" &&
               Array.isArray(seeContent.subjects) &&
               seeContent.subjects.map((subj, i) => <p key={i}>{subj}</p>)}
@@ -197,18 +197,18 @@ function Plus2Page() {
   ];
 
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: true,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } },
-    ],
+    // autoplaySpeed: 1500,
+    // arrows: true,
+    // responsive: [
+    //   { breakpoint: 1024, settings: { slidesToShow: 2 } },
+    //   { breakpoint: 640, settings: { slidesToShow: 1 } },
+    // ],
   };
 
   return (
@@ -242,8 +242,8 @@ function Plus2Page() {
       </section>
 
       {/* Tabs */}
-      <section className="bg-[#0a4d92] text-white py-12">
-        <div className="max-w-5xl mx-auto px-6">
+      <section className="bg-[#0a4d92] text-white py-12 min-h-[560px]">
+        <div className="max-w-5xl mx-auto px-6 h-full">
           <div className="flex flex-wrap border-b border-gray-400 mb-8">
             {tabs.map((tab) => (
               <button
@@ -260,7 +260,7 @@ function Plus2Page() {
             ))}
           </div>
 
-          <div className="bg-white text-blue-900 rounded-lg p-8 shadow-lg space-y-4">
+          <div className="bg-white text-blue-900 rounded-lg p-10 shadow-lg space-y-4 h-105">
             {activeTab === "subjects" &&
               Array.isArray(plus2Content.subjects) &&
               plus2Content.subjects.map((subj, i) => <p key={i}>{subj}</p>)}
@@ -369,7 +369,7 @@ export default function AcademicPrograms() {
               style={{ backgroundImage: `url(${heroImg})` }}
             >
               <div className="absolute inset-0 bg-black/40 flex items-center px-6">
-                <h1 className="text-3xl md:text-5xl font-bold text-white mt-40">
+                <h1 className="text-3xl md:text-5xl font-bold text-white mt-40 ml-22">
                   Academic Programs
                 </h1>
               </div>

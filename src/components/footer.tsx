@@ -20,8 +20,12 @@ function Footer() {
             <li className="font-bold text-lg mb-2">Quick Links</li>
             <li className="font-thin hover:underline cursor-pointer">Home</li>
             <li className="font-thin hover:underline cursor-pointer">About</li>
-            <li className="font-thin hover:underline cursor-pointer">Academic Programs</li>
-            <li className="font-thin hover:underline cursor-pointer">Admission</li>
+            <li className="font-thin hover:underline cursor-pointer">
+              Academic Programs
+            </li>
+            <li className="font-thin hover:underline cursor-pointer">
+              Admission
+            </li>
             <li className="font-thin hover:underline cursor-pointer">News</li>
           </ul>
         </section>
@@ -54,7 +58,8 @@ function Footer() {
       {/* Bottom Bar */}
       <div className="w-full text-center">
         <p className="p-4 bg-[#003476] text-white text-sm md:text-base">
-          © 2025 Everest International School. All Rights Reserved.
+          © {new Date().getFullYear()} Everest International School. All Rights
+          Reserved.
         </p>
       </div>
     </div>
