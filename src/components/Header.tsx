@@ -1,9 +1,10 @@
-
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // for hamburger icon
 import mountainLogo from "../assets/imgs/Main-logo-mountain.png";
 import textLogo from "../assets/imgs/Main-logo-text.png";
+import Marquee from "react-fast-marquee";
+import { newsData } from "../data/newsData";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -84,4 +85,3 @@ function Header() {
 }
 
 export default Header;
-
